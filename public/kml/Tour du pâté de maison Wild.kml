@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://www.opengis.net/kml/2.2'>
+	<Document>
+		<name>Tour du pâté de maison Wild</name>
+		<Placemark>
+			<name>Itinéraire de 15 Rue de la Gare, 28240 La Loupe, France à 15 Rue de la Gare, 28240 La Loupe, France</name>
+			<styleUrl>#line-1267FF-5-nodesc</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>1.01181,48.47325,0.0 1.01206,48.47309,0.0 1.01212,48.47313,0.0 1.0123,48.47325,0.0 1.01253,48.47338,0.0 1.01291,48.47362,0.0 1.01305,48.473710000000004,0.0 1.01334,48.47389,0.0 1.01324,48.47398,0.0 1.01289,48.47440000000001,0.0 1.01283,48.47446,0.0 1.01279,48.47443,0.0 1.01264,48.474360000000004,0.0 1.01247,48.47427,0.0 1.01218,48.47411,0.0 1.01171,48.47384,0.0 1.01164,48.4738,0.0 1.01138,48.47367,0.0 1.0114,48.47364,0.0 1.0114,48.47362,0.0 1.0114,48.47359,0.0 1.01139,48.47356,0.0 1.01136,48.47354,0.0 1.01147,48.47347,0.0 1.01155,48.47342,0.0 1.01181,48.47325,0.0</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>15 Rue de la Gare, 28240 La Loupe, France</name>
+			<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+			<Point>
+				<coordinates>1.0118096,48.47325150000001,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>15 Rue de la Gare, 28240 La Loupe, France</name>
+			<styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+			<Point>
+				<coordinates>1.011815,48.473248,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Style id='icon-503-DB4436-nodesc-normal'>
+			<IconStyle>
+				<color>ff3644DB</color>
+				<scale>1.1</scale>
+				<Icon>
+					<href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+				</Icon>
+				<hotSpot x='16' y='31' xunits='pixels' yunits='insetPixels'>
+				</hotSpot>
+			</IconStyle>
+			<LabelStyle>
+				<scale>0.0</scale>
+			</LabelStyle>
+			<BalloonStyle>
+				<text><![CDATA[<h3>$[name]</h3>]]></text>
+			</BalloonStyle>
+		</Style>
+		<Style id='icon-503-DB4436-nodesc-highlight'>
+			<IconStyle>
+				<color>ff3644DB</color>
+				<scale>1.1</scale>
+				<Icon>
+					<href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+				</Icon>
+				<hotSpot x='16' y='31' xunits='pixels' yunits='insetPixels'>
+				</hotSpot>
+			</IconStyle>
+			<LabelStyle>
+				<scale>1.1</scale>
+			</LabelStyle>
+			<BalloonStyle>
+				<text><![CDATA[<h3>$[name]</h3>]]></text>
+			</BalloonStyle>
+		</Style>
+		<StyleMap id='icon-503-DB4436-nodesc'>
+			<Pair>
+				<key>normal</key>
+				<styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
+			</Pair>
+			<Pair>
+				<key>highlight</key>
+				<styleUrl>#icon-503-DB4436-nodesc-highlight</styleUrl>
+			</Pair>
+		</StyleMap>
+		<Style id='line-1267FF-5-nodesc-normal'>
+			<LineStyle>
+				<color>ffFF6712</color>
+				<width>5</width>
+			</LineStyle>
+			<BalloonStyle>
+				<text><![CDATA[<h3>$[name]</h3>]]></text>
+			</BalloonStyle>
+		</Style>
+		<Style id='line-1267FF-5-nodesc-highlight'>
+			<LineStyle>
+				<color>ffFF6712</color>
+				<width>8.0</width>
+			</LineStyle>
+			<BalloonStyle>
+				<text><![CDATA[<h3>$[name]</h3>]]></text>
+			</BalloonStyle>
+		</Style>
+		<StyleMap id='line-1267FF-5-nodesc'>
+			<Pair>
+				<key>normal</key>
+				<styleUrl>#line-1267FF-5-nodesc-normal</styleUrl>
+			</Pair>
+			<Pair>
+				<key>highlight</key>
+				<styleUrl>#line-1267FF-5-nodesc-highlight</styleUrl>
+			</Pair>
+		</StyleMap>
+	</Document>
+</kml>

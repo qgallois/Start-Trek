@@ -5,27 +5,36 @@
 
 body {
 	padding-top: 70px;
-	background-image: url(../img/fond.jpg);
+	background-image: url();
 }
-
-h1,
-h2,
-h3 {
-	color: white;
+#logo {
+	margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 1100px;
+	
+}
+.page-header {
+	font-size: 2.5em;
+	font-weight: bold;
+	color: #fff;
+	background-color: #22A7F0;
 	font-family: "forgotten_futurist_rg", serif;
+	padding-left: 25px;
+	padding-top: 10px;
+	border-radius: 5px;
 }
 
 .navbar-border {
-	border-bottom: 3px solid #E5007A;
+	border-bottom: 3px solid #22A7F0;
 }
 
 .navbar-header img {
-	transition: 0.4s;
+	width: 50px;
+	height: 50px;
 }
 
-.navbar-header img:hover {
-	transform: rotate(360deg);
-}
+
 
 .titleCenter img {
 	transition: 0.4s;
@@ -47,81 +56,9 @@ h3 {
 	background-color: transparent;
 }
 
-.imgAdd {
-	max-width: 100px;
-	margin-left: 20px;
-}
-
-.titleCenter {
-	display: block;
-	width: 40%;
-	margin-left: auto;
-	margin-right: auto;
-}
 
 
-}
-.champs {
-	margin: 20px 0;
-}
-th {
-	text-align: center;
-	color: white;
-}
-#inputName,
-#inputAllery,
-#inputHated {
-	width: 250px;
-}
-hr.soften {
-	height: 1px;
-	background-image: -webkit-linear-gradient(left, rgba(229, 0, 122, 0), rgba(229, 0, 122, .8), rgba(229, 0, 122, 0));
-	background-image: -moz-linear-gradient(left, rgba(229, 0, 122, 0), rgba(229, 0, 122, .8), rgba(229, 0, 122, 0));
-	background-image: -ms-linear-gradient(left, rgba(229, 0, 122, 0), rgba(229, 0, 122, .8), rgba(229, 0, 122, 0));
-	background-image: -o-linear-gradient(left, rgba(229, 0, 122, 0), rgba(229, 0, 122, .8), rgba(229, 0, 122, 0));
-	border: 0;
-}
-.marge {
-	margin-left: 10px;
-}
-.center {
-	text-align: center;
-}
-.caro {
-	border-radius: 100%;
-	border: 1px solid white;
-	margin-left: 50px;
-	margin-top: 20px;
-}
-
-
-
-.hover08 figure img {
-	-webkit-filter: grayscale(0);
-	filter: grayscale(0);
-	border-radius: 100%;
-	border: 1px solid white;
-	margin-left: 50px;
-	margin-top: 20px;
-}
-
-.hover08 figure:hover img {
-	-webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-	border-radius: 100%;
-	border: 1px solid white;
-	margin-left: 50px;
-	margin-top: 20px;
-}
-
-.charger {
-	height: 100px;
-	width: 100px;	
-}
-
-.preview {
-	height: 200px;
-	width: 200px;	
+#inputLieu {
+	margin-top: 50px;
+	width: 200px;
 }
