@@ -1,0 +1,23 @@
+<h1>{{title}}</h1>
+
+<select ng-model="MyCity" class="form-control" ng-click="loadWeather()" style="width:165px">
+	<option ng-repeat="town in towns" value="{{town.name}}">
+		{{town.name}}
+	</option>
+</select>
+<div class="row">
+	<div class="col-md-offset-2">
+		<p>Je ne veux pas être dehors en dessous de <input type="number" style="width:50px" ng-model="tMini" />°C.</p>
+    	<div id="weather" ></div>
+    	<ul class="list-group transparent">
+				<h1>Où sortir :</h1><br>
+				<li class="list-group-item" ng-repeat="town in towns|filter:{sortieInt}">
+					<form class="form-inline">
+						<div class="form-group">
+							{{town.ext}}
+						</div>
+					</form>
+				</li>
+			</ul>
+    </div>
+</div>

@@ -1,21 +1,16 @@
 function config($routeProvider) {
 	$routeProvider
-		.when('/', {
-		templateUrl: 'views/dish.html',
-		controller: 'dishController'
+	.when('/', {
+		templateUrl: 'views/accueil.html',
+		controller: 'accueilController',
 	})
-		.when('/guest', {
-		templateUrl: 'views/guest.html',
-		controller: 'guestController'
+	.when('/carte', {
+		templateUrl: 'views/carte.html',
+		controller: 'carteController',
 	})
-		.when('/historique', {
-		templateUrl: 'views/main.html',
-		controller: 'invitController'
-	})
-
-		.when('/party', {
-		templateUrl: 'views/party.html',
-		controller: 'partyController',
+	.when('/meteo', {
+		templateUrl: 'views/meteo.html',
+		controller: 'meteoController',
 	})
 		.otherwise({
 		redirectTo: '/'
@@ -30,17 +25,14 @@ function run($rootScope, $location) {
 		$rootScope.activetab = newVal;
 	});
 }
-angular.module('app', ['ngRoute','flow'])
+angular.module('app', ['ngRoute','ngMap'])
 	.config(config)
-
-	.controller('dishController', dishController)
-	.controller('guestController', guestController)
-	.controller('invitController', invitController)
-	.controller('partyController', partyController)
-	.service('dishService', dishService)
-	.service('guestService', guestService)
-	.service('invitService', invitService)
-	.service('partyService', partyService)
+	.controller('accueilController', accueilController)
+	.controller('carteController', carteController)
+	.controller('meteoController', meteoController)
+	.service('accueilService', accueilService)
+	.service('carteService', carteService)
+	.service('meteoService', meteoService)
 
 	/*CHARGEMENT IMAGE*/
 	.config(['flowFactoryProvider', function (flowFactoryProvider) {
@@ -55,6 +47,5 @@ angular.module('app', ['ngRoute','flow'])
 		// Can be used with different implementations of Flow.js
 		// flowFactoryProvider.factory = fustyFlowFactory;
 	}])
-
 /*.factory('', )*/
 	.run(run);
