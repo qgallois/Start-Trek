@@ -1,21 +1,8 @@
 function config($routeProvider) {
 	$routeProvider
-		.when('/', {
-		templateUrl: 'views/dish.html',
-		controller: 'dishController'
-	})
-		.when('/guest', {
-		templateUrl: 'views/guest.html',
-		controller: 'guestController'
-	})
-		.when('/historique', {
-		templateUrl: 'views/main.html',
-		controller: 'invitController'
-	})
-
-		.when('/party', {
-		templateUrl: 'views/party.html',
-		controller: 'partyController',
+		.when('/meteo', {
+		templateUrl: 'views/meteo.html',
+		controller: 'meteoController',
 	})
 		.otherwise({
 		redirectTo: '/'
@@ -33,14 +20,8 @@ function run($rootScope, $location) {
 angular.module('app', ['ngRoute','flow'])
 	.config(config)
 
-	.controller('dishController', dishController)
-	.controller('guestController', guestController)
-	.controller('invitController', invitController)
-	.controller('partyController', partyController)
-	.service('dishService', dishService)
-	.service('guestService', guestService)
-	.service('invitService', invitService)
-	.service('partyService', partyService)
+	.controller('meteoController', meteoController)
+	.service('meteoService', meteoService)
 
 	/*CHARGEMENT IMAGE*/
 	.config(['flowFactoryProvider', function (flowFactoryProvider) {

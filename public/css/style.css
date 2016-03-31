@@ -5,13 +5,12 @@
 
 body {
 	padding-top: 70px;
-	background-image: url(../img/fond.jpg);
 }
 
 h1,
 h2,
 h3 {
-	color: white;
+	color: black;
 	font-family: "forgotten_futurist_rg", serif;
 }
 
