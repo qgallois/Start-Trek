@@ -5,7 +5,6 @@
 
 body {
 	padding-top: 70px;
-	background-image: url();
 }
 #logo {
 	margin-left: auto;
@@ -19,6 +18,12 @@ body {
 	font-weight: bold;
 	color: #fff;
 	background-color: #22A7F0;
+}
+
+h1,
+h2,
+h3 {
+	color: black;
 	font-family: "forgotten_futurist_rg", serif;
 	padding-left: 25px;
 	padding-top: 10px;

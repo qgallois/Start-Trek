@@ -8,7 +8,11 @@ function config($routeProvider) {
 		templateUrl: 'views/carte.html',
 		controller: 'carteController',
 	})
-	.otherwise({
+	.when('/meteo', {
+		templateUrl: 'views/meteo.html',
+		controller: 'meteoController',
+	})
+		.otherwise({
 		redirectTo: '/'
 	});
 }
@@ -25,8 +29,23 @@ angular.module('app', ['ngRoute','ngMap'])
 	.config(config)
 	.controller('accueilController', accueilController)
 	.controller('carteController', carteController)
+	.controller('meteoController', meteoController)
 	.service('accueilService', accueilService)
 	.service('carteService', carteService)
-	
+	.service('meteoService', meteoService)
+
+	/*CHARGEMENT IMAGE*/
+	.config(['flowFactoryProvider', function (flowFactoryProvider) {
+		flowFactoryProvider.defaults = {
+			target: '/upload',
+			permanentErrors:[404, 500, 501]
+		};
+		// You can also set default events:
+		flowFactoryProvider.on('catchAll', function (event) {
+			console.log('catchAll', arguments);
+		});
+		// Can be used with different implementations of Flow.js
+		// flowFactoryProvider.factory = fustyFlowFactory;
+	}])
 /*.factory('', )*/
 	.run(run);

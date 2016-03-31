@@ -7,7 +7,6 @@
 		<meta name="author" content="">
 		<link rel="icon" type="image/png" href="../img/Delta-shield.png" />
 		<title>Start Trek</title>
-
 		<!-- CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/style.css">
@@ -22,7 +21,11 @@
 		
 		<script src="js/services/accueilService.js"></script>
 		<script src="js/services/carteService.js"></script>
-		
+
+		<script src="js/controllers/meteoController.js"></script>
+		<script src="js/services/meteoService.js"></script>
+		<script src="js/libs/ng-flow-standalone.min.js"></script>
+		<script src="js/libs/ng-flow.min.js"></script>
 		<script src="js/app.js"></script>
 	</head>
 	<body>
@@ -32,10 +35,10 @@
 					
 				</div>
 				<ul class="nav navbar-nav">
-
 					                                
 					<li ng-class="{active: activetab=='/accueil'}"><a href="#/accueil">Accueil</a>             
 					<li ng-class="{active: activetab=='/carte'}"><a href="#/carte">Parcours</a></li>
+					<li ng-class="{active: activetab=='/meteo'}"><a href="#/meteo">Météo</a></li>
 
 				</ul>
 			</div>
